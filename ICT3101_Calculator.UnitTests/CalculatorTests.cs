@@ -10,6 +10,7 @@ namespace ICT3101_Calculator.UnitTests
         public void Setup()
         {
             // Arrange
+            // code change for step 10
             _calculator = new Calculator();
         }
         [Test]
