@@ -147,5 +147,27 @@ namespace ICT3101_Calculator
         {
             return Divide(defects, codeSize); //round to 3 decimal places
         }
+
+        public double GenMagicNum(double input, IFileReader fileReader)
+        {
+            double result = 0;
+            int choice = Convert.ToInt16(input);
+            //Dependency------------------------------
+            //FileReader getTheMagic = new FileReader();
+            //----------------------------------------
+            string[] magicStrings = fileReader.Read("C:\\Users\\Jack\\Source\\repos\\ICT3101_Calculator\\ICT3101_Calculator\\MagicNumbers.txt");
+            if ((choice >= 0) && (choice < magicStrings.Length))
+            {
+                result = Convert.ToDouble(magicStrings[choice]);
+            }
+            result = (result > 0) ? (2 * result) : (-2 * result);
+            return result;
+        }
+
+        
+
+
+
+
     }
 }
