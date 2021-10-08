@@ -200,25 +200,5 @@ namespace ICT3101_Calculator.UnitTests
             // Assert
             Assert.That(() => _calculator.UnknownFunctionB(4, 5), Throws.ArgumentException);
         }
-
-        [Test]
-        public void MagicNumber_WhenGivenNumber_ResultEqualsNumber()
-        {
-            //note: you constructed this fileReader at the top of this file
-
-            // Act
-            double result = _calculator.GenMagicNum(3, fileReader);
-            // Assert
-            Assert.That(result, Is.EqualTo(156));
-        }
-
-        [Test]
-        public void MagicNumber_WhenGivenNegativeNumber_ResultEqualsZero()
-        {
-            // Act
-            double result = _calculator.GenMagicNum(-3, fileReader);
-            // Assert
-            Assert.That(result, Is.EqualTo(0));
-        }
     }
 }
