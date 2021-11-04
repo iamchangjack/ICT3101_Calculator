@@ -19,7 +19,7 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
             // Setup local Selenium WebDriver
             ChromeOptions option = new ChromeOptions();
             option.AddArgument("--headless");
-            _driver = new ChromeDriver("D:\\Work\\Visual Studios Projects\\ICT3101_Calculator", option);
+            _driver = new ChromeDriver(option);
         }
         [Test]
         public void GoogleAdd_WhenAdding2and2_ResultEquals4()

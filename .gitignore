@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/ICT3101_Calculator.UnitTests/Selenium_Tests/Selenium_Firefox_Local-.cs
+/ICT3101_Calculator.UnitTests/Selenium_Tests/Selenium_Chrome_Local.cs
